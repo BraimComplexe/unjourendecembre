@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base_mariage.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Un jour en Décembre</title>
+  </head>
+
+  <body>
+    <header>
+        <h1>
+          <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
+          <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
+        </h1> 
+    </header>
+
+    <div class="tab">
+      <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./access.html'>Accès</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./hebergement.html'>Hébergements</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
+    </div>
+
+    <div style='padding-top: 2%'>Afin de parfaire l'organisation de notre mariage, merci de remplir le formulaire suivant*: </div>
+
+    <div style='padding-top: 4%'>
+    <form action="/new" method="post">
+      <center>
+      <label for="participant">Mon nom: </label>
+        <input list="participants" name="participant" id="participant">
+        <datalist id="participants" style="display: none;">
+          <option value="Alice Beaugrand">
+          <option value="Jean-Noël Lorenzi">
+          <option value="Jean-Paul Unknown">
+          <option value="Pauline Unknown">
+          <option value="Anna Unknown">
+        </datalist>
+      <br><label for="ceremonie">Je participe à la <b>cérémonie</b>: </label> <input name="checkbox_ceremonie" type="checkbox"> Oui
+                                          <input name="checkbox_ceremonie" type="checkbox"> Non
+      <br><label for="vindhonneur">Je participe au <b>vin d'honneur</b>: </label><input name="checkbox_vindhonneur" type="checkbox"> Oui
+                                                <input name="checkbox_vindhonneur" type="checkbox"> Non
+      <br><label for="soiree">Je participe au <b>dîner</b> et à la <b>soirée</b>: </label><input name="checkbox_soiree" type="checkbox"> Oui
+                                                              <input name="checkbox_soiree" type="checkbox"> Non
+      <br><label for="brunch">Je participe au <b>brunch</b> le dimanche: </label><input name="checkbox_brunch" type="checkbox"> Oui
+                                                     <input name="checkbox_brunch" type="checkbox"> Non
+      <br><br>
+      <button class="confirmation_button" type="submit">
+        <div class="img_envoyer_confirmation">
+          <img src="../css/img/R_marque_place.png" alt="image" height='100%'>
+          <div class="txt_envoyer_confirmation">Envoyer ma réponse</div>
+        </div>
+      </button>
+      </center>
+    </form>
+    </div>
+    <div style = 'padding-top: 2%; padding-left: 60%;'>*Merci de remplir un formulaire par personne</div>
+  
+
+  </body>
+</html>

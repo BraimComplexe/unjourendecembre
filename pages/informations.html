@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/base_mariage.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Un jour en Décembre</title>
+  </head>
+
+  <body>
+    <header>
+        <h1>
+          <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
+          <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
+        </h1> 
+    </header>
+
+    <div class="tab">
+      <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./access.html'>Accès</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./hebergement.html'>Hébergements</a></button>
+      <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
+    </div>
+
+    <h1>Samedi</h1>
+    <button type='button' class='collapsible'>&#43; Programme <img src='../css/img/R_branche_sapin.png' height='25px'/></button>
+    <div class='content'><center>
+      <div style="display:inline-block;vertical-align:middle;">
+        <img src='../css/img/programme.PNG' height='80%'/>
+      </div>
+      <div style="display:inline-block;padding-left:50px;">
+        Les festivités auront lieu dans la <b>salle Pauline</b>
+      </div>
+    </center></div>
+    </div>
+
+    <h1>Dimanche</h1>
+    <button type='button' class='collapsible'>&#43; Brunch <img src='../css/img/R_branche_sapin.png' height='25px'/></button>
+    <div class='content'><center>
+      <div style="display:inline-block;vertical-align:middle;">
+        <img src='../css/img/brunch.PNG' height='80%'/>
+      </div>
+      <div style="display:inline-block;padding-left:50px;">
+        Le brunch aura lieu dans la <b>salle Samantha</b>
+      </div>
+    </center></div>
+
+     <!-- JAVASCRIPT -->
+     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+  </body>
+</html>
