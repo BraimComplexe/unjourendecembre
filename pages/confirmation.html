@@ -16,6 +16,7 @@
         </h1> 
     </header>
 
+    <main>
     <div class="tab">
       <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
       <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
@@ -26,38 +27,66 @@
 
     <div style='padding-top: 2%'>Afin de parfaire l'organisation de notre mariage, merci de remplir le formulaire suivant*: </div>
 
-    <div style='padding-top: 4%'>
-    <form action="/new" method="post">
-      <center>
-      <label for="participant">Mon nom: </label>
-        <input list="participants" name="participant" id="participant">
-        <datalist id="participants" style="display: none;">
-          <option value="Alice Beaugrand">
-          <option value="Jean-Noël Lorenzi">
-          <option value="Jean-Paul Unknown">
-          <option value="Pauline Unknown">
-          <option value="Anna Unknown">
-        </datalist>
-      <br><label for="ceremonie">Je participe à la <b>cérémonie</b>: </label> <input name="checkbox_ceremonie" type="checkbox"> Oui
-                                          <input name="checkbox_ceremonie" type="checkbox"> Non
-      <br><label for="vindhonneur">Je participe au <b>vin d'honneur</b>: </label><input name="checkbox_vindhonneur" type="checkbox"> Oui
-                                                <input name="checkbox_vindhonneur" type="checkbox"> Non
-      <br><label for="soiree">Je participe au <b>dîner</b> et à la <b>soirée</b>: </label><input name="checkbox_soiree" type="checkbox"> Oui
-                                                              <input name="checkbox_soiree" type="checkbox"> Non
-      <br><label for="brunch">Je participe au <b>brunch</b> le dimanche: </label><input name="checkbox_brunch" type="checkbox"> Oui
-                                                     <input name="checkbox_brunch" type="checkbox"> Non
-      <br><br>
-      <button class="confirmation_button" type="submit">
-        <div class="img_envoyer_confirmation">
-          <img src="../css/img/R_marque_place.png" alt="image" height='100%'>
-          <div class="txt_envoyer_confirmation">Envoyer ma réponse</div>
-        </div>
-      </button>
-      </center>
-    </form>
+    <div id="base_content">
+      <form action="/recuperation_donnees_confirmation" method="post">
+        <center>
+        <label for="participant">Mon nom: </label>
+          <input list="participants" name="participant" id="participant">
+          <datalist id="participants" style="display: none;">
+            <option value="Alice Beaugrand">
+            <option value="Jean-Noël Lorenzi">
+            <option value="Jean-Paul Unknown">
+            <option value="Pauline Unknown">
+            <option value="Anna Unknown">
+          </datalist>
+        <br><label for="ceremonie">Je participe à la <b>cérémonie</b>: </label> <input id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Oui
+                                            <input id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Non
+        <br><label for="vindhonneur">Je participe au <b>vin d'honneur</b>: </label><input id="checkbox_vindhonneur" name="checkbox_vindhonneur" type="radio"> Oui
+                                                  <input id="checkbox_vindhonneur" name="checkbox_vindhonneur" type="radio"> Non
+        <br><label for="soiree">Je participe au <b>dîner</b> et à la <b>soirée</b>: </label><input id="checkbox_soiree" name="checkbox_soiree" type="radio"> Oui
+                                                                <input id="checkbox_soiree" name="checkbox_soiree" type="radio"> Non
+        <br><label for="brunch">Je participe au <b>brunch</b> le dimanche: </label><input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Oui
+                                                      <input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Non
+        <br><br>
+        <button class="confirmation_button" type="submit">
+          <div class="img_envoyer_confirmation">
+            <img src="../css/img/R_marque_place.png" alt="image" height='100%'>
+            <div class="txt_envoyer_confirmation">Envoyer ma réponse</div>
+          </div>
+        </button>
+        </center>
+      </form>
     </div>
-    <div style = 'padding-top: 2%; padding-left: 60%;'>*Merci de remplir un formulaire par personne</div>
+    <div style = 'padding-top: 2%; padding-left: 70%;'>*Merci de remplir un formulaire par personne</div>
   
 
-  </body>
+  </main>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+  <center><img src="../css/img/R_branche_coton.png" height="80px;"/><br></center>
+  <!-- COMPTE A REBOURS -->
+  <center>
+  <script language="JavaScript">
+    TargetDate = "12/10/2022 03:30 PM";
+    BackColor = false;
+    ForeColor = false;
+    CountActive = true;
+    CountStepper = -1;
+    LeadingZero = true;
+
+    DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
+    FinishMessage = "C'est le jour J !";
+  </script>
+  <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
+  </script>
+  </center>
+</footer>
+</body>
+
 </html>

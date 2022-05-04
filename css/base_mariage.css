@@ -11,6 +11,7 @@ body {
     background-color: #fefff3;
     font-family: 'Elegant';
     font-size: 35px;
+    height: 100%;
   }
   
 header {
@@ -19,7 +20,20 @@ header {
     display: block;
 }
 
+main{
+  position: relative;
+  min-height: 75%;
+}
 
+footer{
+  background-color: none;
+  bottom:0;
+  width:99%;
+  position: relative;
+  height:120px;
+  font-size: 25px;
+  border-top: solid 1px #0a4b39;
+ }
 
 header h1{
     color: white;
@@ -107,6 +121,12 @@ header h1{
     border-top: none;
   }
 
+
+  #base_content{
+    padding-top:4%;
+  }
+
+
   /* INFORMATION PAGE */
   body .collapsible {
     background-color: #fefff3;
@@ -139,6 +159,7 @@ header h1{
     font-size: inherit;
     height: 20%;
     width: 100%;
+    cursor: pointer;
   }
 
 
@@ -158,4 +179,31 @@ header h1{
 
   #participants{
     display: none;
+  }
+
+  #checkbox_ceremonie, #checkbox_vindhonneur, #checkbox_soiree, #checkbox_brunch{
+    accent-color: #0a4b39;
+  }
+
+
+  /* ACCESS PAGE */
+  #checkbox_transport{
+    accent-color: #0a4b39;
+  }
+
+  .transport_button{
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+
+  .txt_envoyer_transport{
+    border: 1px outset #0a4b39;
+    border-radius: 10px 0px 10px 0px;
+    color:#0a4b39;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
   }

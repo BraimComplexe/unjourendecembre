@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="../css/base_mariage.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />                 
     <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,6 +18,7 @@
         </h1> 
     </header>
 
+    <main>
     <div class="tab">
       <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
       <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
@@ -24,11 +27,77 @@
       <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
     </div>
 
-    <p>Lieu et adresse : Domaine de la Ferme aux Saules, Rue du Bas-Rucourt - 95180 Menucourt
+    <p style="display: none;">Lieu et adresse : Domaine de la Ferme aux Saules, Rue du Bas-Rucourt - 95180 Menucourt
         https://www.fermeauxsaules.com/fr/accueil 
         accès depuis Paris en transports 
         accès depuis autoroute 
         + demander moyen de transports utilisé : voiture / transports en commun ? (pour voir si certaines personnes pourraient aller chercher ceux qui arrivent à une gare > mieux dit évidemment mais tu vois l’idée ^^)
-</p>
-  </body>
+    </p>
+    <div id="base_content"><center>
+      La réception se passera au <b>Domaine de la Ferme aux Saules</b>, Rue du Bas-Rucourt - 95180 Menucourt. <br>
+      Pour plus d'informations sur le lieu, voici son adresse internet: <a href="https://www.fermeauxsaules.com/fr/accueil">https://www.fermeauxsaules.com/fr/accueil</a>. <br><br> <br>
+      <br>
+
+      Merci de bien vouloir nous indiquer le moyen de transport que vous utiliserez pour venir: 
+      <form action="/recuperation_donnees_transports" method="post">
+        <center>
+        <label for="participant_transport">Mon nom: </label>
+          <input list="participants_transport" name="participant_transport" id="participant_transport">
+          <datalist id="participants_transport" style="display: none;">
+            <option value="Alice Beaugrand">
+            <option value="Jean-Noël Lorenzi">
+            <option value="Jean-Paul Unknown">
+            <option value="Pauline Unknown">
+            <option value="Anna Unknown">
+          </datalist>
+        <br><label for="transport">Je viendrai en:</label> <input id="checkbox_transport" name="checkbox_transport" type="radio"> Transports en commmun
+                                            <input id="checkbox_transport" name="checkbox_transport" type="radio"> Voiture
+        <button class="transport_button" type="submit">
+          <div class="txt_envoyer_transport">Envoyer</div>
+        </button>
+        </center>
+      </form><br><br>
+    </center></div>
+
+    <center>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.508972932104!2d1.9574882572077468!3d49.025910108767555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f2d56ffd2baf%3A0xe705c9892a6c5092!2sLa%20Ferme%20Aux%20Saules!5e0!3m2!1sfr!2sfr!4v1651655084297!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </center>
+    <br><br><br>
+    <li>
+      <i class='fa fa-automobile'></i>&nbsp; Depuis l'Autoroute A13: prendre la sortie 8, Direction Les Mureaux/Meulan
+    </li><br>
+    <li>
+      <div style="display:inline-block;"><i class='fa-solid fa-train-subway'></i>&nbsp; En transports en commun depuis Paris: RER A puis bus 39 </div>
+      <div style="display:inline-block;padding-left:50px;vertical-align:middle;"><img src="../css/img/acces_rer_Paris.PNG"/></div>
+    </li>
+    <br><br>
+    </main>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+  <center><img src="../css/img/R_branche_coton.png" height="80px;"/><br></center>
+  <!-- COMPTE A REBOURS -->
+  <center>
+  <script language="JavaScript">
+    TargetDate = "12/10/2022 03:30 PM";
+    BackColor = false;
+    ForeColor = false;
+    CountActive = true;
+    CountStepper = -1;
+    LeadingZero = true;
+
+    DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
+    FinishMessage = "C'est le jour J !";
+  </script>
+  <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
+  </script>
+  </center>
+</footer>
+</body>
+
 </html>
