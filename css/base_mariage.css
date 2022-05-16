@@ -6,7 +6,10 @@
     font-family: 'BooksScript';
     src: url("./polices/BooksScript.otf");
 }
-
+@font-face {
+    font-family: 'TTWPGOTT';
+    src: url("./polices/TTWPGOTT.ttf");
+}
 body {
     background-color: #fefff3;
     font-family: 'BooksScript';
@@ -190,11 +193,11 @@ header h1{
 
 
   /* ACCESS PAGE */
-  #checkbox_transport{
+  #checkbox_transport, #checkbox_navette{
     accent-color: #0a4b39;
   }
 
-  .transport_button{
+  .transport_button, .navette_button{
     border: none;
     background-color: inherit;
     font-family: inherit;
@@ -202,7 +205,7 @@ header h1{
   }
   
 
-  .txt_envoyer_transport{
+  .txt_envoyer_transport, .txt_envoyer_navette{
     border: 1px outset #0a4b39;
     border-radius: 10px 0px 10px 0px;
     color:#0a4b39;
@@ -255,5 +258,20 @@ header h1{
     padding-left: 25px;
     text-align: center;
     vertical-align: middle;
+  }
+  
+  /* HEBERGEMENT PAGE */
+  #block_hotel{
+    display: inline-block;
+    padding-left: 120px;
+    width: 40%;
+    vertical-align: top;
+    font-family: 'TTWPGOTT';
+  }
+
+  #hotelPreferentiel{
+    padding-left: 50px;
+    width: 100%;
+    font-family: 'TTWPGOTT';
   }
   

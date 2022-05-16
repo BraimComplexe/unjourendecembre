@@ -24,11 +24,157 @@
       <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
     </div>
 
-    <p>Mettre la liste des hôtels proches + préciser qu’il y a une réduction (à revérifier lesquels + combien) 
-        + demander s’ils comptent réserver dans l’un des hôtels : lequel ? 
-          + système de navette : intéressé ? (préciser que si plusieurs invités choisissent cette option, nous prendrons l’option navette)
-        En revanche : hébergements aux frais des invités        
-    </p>
+    
+    
+    <div id="base_content">
+      <center>
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/>
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/><br>
+      
+      Nous vous laissons le soin de réserver votre chambre dans le lieu de votre choix. Pour vous aider, vous trouverez ici une liste d'hôtels se trouvant à proximité du lieu de réception. 
+      <br><br>
+      Si vous choisissez un logement parmi la liste ci-dessous, un service de navette peut être mis en place pour vous emmener à votre hôtel, le samedi soir après la fête, depuis le lieu de réception et vous ramener le lendemain, pour le brunch depuis votre hôtel. Merci de nous indiquer si vous êtes intéressés.
+      <form action="/recuperation_donnees_navette" method="post" style="width: 40%; margin-top: 50px; border-top: solid 1px #0a4b39; border-bottom: solid 1px #0a4b39;">
+        <center>
+        <label for="participant_navette">Mon nom: </label>
+          <input list="participants_navette" name="participant_navette" id="participant_navette">
+          <datalist id="participants_navette" style="display: none;">
+            <option value="Alice Beaugrand">
+            <option value="Jean-Noël Lorenzi">
+            <option value="Jean-Paul Unknown">
+            <option value="Pauline Unknown">
+            <option value="Anna Unknown">
+          </datalist>
+        <br><label for="navette">Je suis intéressé(e) par le service de navette:</label> <input id="checkbox_navette" name="checkbox_navette" type="radio"> Oui
+                                            <input id="checkbox_navette" name="checkbox_navette" type="radio"> Non
+        <button class="navette_button" type="submit">
+          <div class="txt_envoyer_navette">Envoyer</div>
+        </button>
+        </center>
+      </form><br>
+      
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/>
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/><br>
+    </center>
+    </div><br><br>
+
+  
+    <div id="hotelPreferentiel">
+    <b>OLIVARIUS (Appart’Hotel) </b><br>
+    34, boulevard du Port - Cergy-Pontoise <br>
+    01 34 25 15 75 <br>
+    <a href="https://olivarius-cergy.com/">https://olivarius-cergy.com/</a> <br>
+    <i>*des tarifs préférentiels sont appliqués pour cet hôtel en raison de son partenariat avec le lieu de réception.<br>
+      Pour plus d'informations sur les tarifs préférentiels, cliquez <a href="">ICI</a></i><br><br>
+    </div>
+    
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    </center><br>
+
+    <div id="block_hotel">
+    <b>IBIS </b><br>
+    28, avenue des Grouettes - Cergy-Pontoise<br>
+    <a href="https://all.accor.com/hotel/0928/index.fr.shtml">https://all.accor.com/hotel/0928/index.fr.shtml</a> <br>
+    01 34 22 11 44<br><br>
+    </div>
+
+    
+
+    <div id="block_hotel">
+    <b>NOVOTEL </b><br>
+    3, avenue du Parc - Cergy-Pontoise<br>
+    <a href="https://novotel-cergy-pontoise.hotelmix.fr/">https://novotel-cergy-pontoise.hotelmix.fr/</a> <br>
+    01 30 30 39 47<br><br>
+    </div>
+
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    </center><br>
+
+    <div id="block_hotel">
+      <b>KYRIAD</b><br>
+    45, avenue Genottes - Cergy St Christophe<br>
+    <a href="https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/">https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/</a> <br>
+    01 30 30 19 11<br><br>
+    </div>
+
+    <div id="block_hotel">
+      <b>PREMIERE CLASSE</b><br>
+    Rue de la Pompe - Cergy<br>
+    <a href="https://cergy-saint-christophe.premiereclasse.com/fr-fr/">https://cergy-saint-christophe.premiereclasse.com/fr-fr/</a> <br>
+    01 30 38 07 79<br><br>
+    </div>
+    
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    </center><br>
+    
+    <div id="block_hotel">
+      <b>PALM’HOTEL</b><br>
+    Rue de la Parabole - Cergy<br>
+    <a href="https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html</a><br>
+    01 30 30 80 77<br><br>
+    </div>
+
+    <div id="block_hotel">
+      <b>FORMULE 1</b><br>
+    RN 14 - Cergy St Christophe<br>
+    <a href="https://all.accor.com/hotel/B3B4/index.fr.shtml">https://all.accor.com/hotel/B3B4/index.fr.shtml</a><br>
+    08 91 70 52 09<br><br>
+    </div>
+
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    </center><br>
+
+    <div id="block_hotel">
+      <b>IBIS BUDGET</b> <br>
+    Allée du Promenoir - Cergy St Christophe<br>
+    <a href="https://all.accor.com/hotel/4981/index.fr.shtml">https://all.accor.com/hotel/4981/index.fr.shtml</a> <br>
+    08 92 68 09 20<br><br>
+    </div>
+
+    <div id="block_hotel">
+      <b>CAMPANILE</b><br>
+    Rue du Petit Albi - Cergy<br>
+    <a href="https://cergy-pontoise.campanile.com/fr-fr/">https://cergy-pontoise.campanile.com/fr-fr/</a> <br>
+    01 34 24 02 44<br><br>
+    </div>
+
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    </center><br>
+
+    <div id="block_hotel">
+      <b>MERCURE</b> <br>
+    3, rue des Chenes - Cergy<br>
+    <a href="https://mercure.accor.com/fr/france/index.shtml">https://mercure.accor.com/fr/france/index.shtml</a> <br>
+    01 34 24 94 94<br><br>
+    </div>
+
+    <div id="block_hotel">
+      <b>COMFORT HOTEL</b><br>
+    Rue des Pleïades - Les Mureaux <br>
+    <a href="https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html</a> <br>
+    01 34 74 72 50<br><br>
+    </div>
+
   </main>
 
 
