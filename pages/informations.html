@@ -1,22 +1,23 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <link rel="stylesheet" href="../css/base_mariage.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Un jour en Décembre</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="../css/base_mariage.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-  <body>
-    <header>
-        <h1>
-          <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
-          <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
-        </h1> 
-    </header>
-  
-    <main>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Un jour en Décembre</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
+      <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
+    </h1>
+  </header>
+
+  <main>
     <div class="tab">
       <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
       <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
@@ -26,45 +27,51 @@
     </div>
 
     <h1>Samedi</h1>
-    <button type='button' class='collapsible'>&#43; Programme <img src='../css/img/R_branche_sapin.png' height='25px'/></button>
-    <div class='content'><center>
-      <div style="display:inline-block;vertical-align:middle;">
-        <img src='../css/img/programme.PNG' height='80%'/>
-      </div>
-      <div style="display:inline-block;padding-left:50px;">
-        Les festivités auront lieu dans la <b>salle Pauline</b>
-      </div>
-    </center></div>
+    <button type='button' class='collapsible'>&#43; Programme <img src='../css/img/R_branche_sapin.png'
+        height='25px' /></button>
+    <div class='content'>
+      <center>
+        <div style="display:inline-block;vertical-align:middle;">
+          <img src='../css/img/programme.PNG' height='80%' />
+        </div>
+        <div style="display:inline-block;padding-left:50px;">
+          Les festivités auront lieu dans la <b>salle Pauline</b>
+        </div>
+      </center>
+    </div>
     </div>
 
     <h1>Dimanche</h1>
-    <button type='button' class='collapsible'>&#43; Brunch <img src='../css/img/R_branche_sapin.png' height='25px'/></button>
-    <div class='content'><center>
-      <div style="display:inline-block;vertical-align:middle;">
-        <img src='../css/img/brunch.PNG' height='80%'/>
-      </div>
-      <div style="display:inline-block;padding-left:50px;">
-        Le brunch aura lieu dans la <b>salle Samantha</b>
-      </div>
-    </center></div><br><br>
+    <button type='button' class='collapsible'>&#43; Brunch <img src='../css/img/R_branche_sapin.png'
+        height='25px' /></button>
+    <div class='content'>
+      <center>
+        <div style="display:inline-block;vertical-align:middle;">
+          <img src='../css/img/brunch.PNG' height='80%' />
+        </div>
+        <div style="display:inline-block;padding-left:50px;">
+          Le brunch aura lieu dans la <b>salle Samantha</b>
+        </div>
+      </center>
+    </div><br><br>
 
-     <!-- JAVASCRIPT -->
-     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "block";
-            }
-          });
-        }
-        </script>
+    <!-- JAVASCRIPT -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </main>
 
 
@@ -72,26 +79,51 @@
 
 
 
-<!--FOOTER-->
-<footer>
-  <center><img src="../css/img/R_branche_coton.png" height="80px;"/><br></center>
-  <!-- COMPTE A REBOURS -->
-  <center>
-  <script language="JavaScript">
-    TargetDate = "12/10/2022 03:30 PM";
-    BackColor = false;
-    ForeColor = false;
-    CountActive = true;
-    CountStepper = -1;
-    LeadingZero = true;
+  <!--FOOTER-->
+  <footer>
+    <center><img src="../css/img/R_branche_coton.png" height="80px;" /><br></center>
+    <!-- COMPTE A REBOURS -->
+    <center>
+      <script language="JavaScript">
+        TargetDate = "12/10/2022 03:30 PM";
+        BackColor = false;
+        ForeColor = false;
+        CountActive = true;
+        CountStepper = -1;
+        LeadingZero = true;
 
-    DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
-    FinishMessage = "C'est le jour J !";
-  </script>
-  <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-  </script>
-  </center>
-</footer>
-  </body>
+        DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
+        FinishMessage = "C'est le jour J !";
+      </script>
+      <script language="JavaScript">
+        function calcage(secs, num1, num2) {
+          s = ((Math.floor(secs / num1)) % num2).toString(); if (LeadingZero && s.length < 2)
+            s = "0" + s; return "<b>" + s + "</b>";
+        }
+        function CountBack(secs) {
+          if (secs < 0) { document.getElementById("cntdwn").innerHTML = FinishMessage; return; }
+          DisplayStr = DisplayFormat.replace(/%%D%%/g, calcage(secs, 86400, 100000)); DisplayStr = DisplayStr.replace(/%%H%%/g, calcage(secs, 3600, 24)); DisplayStr = DisplayStr.replace(/%%M%%/g, calcage(secs, 60, 60)); DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs, 1, 60)); document.getElementById("cntdwn").innerHTML = DisplayStr; if (CountActive)
+            setTimeout("CountBack(" + (secs + CountStepper) + ")", SetTimeOutPeriod);
+        }
+        function putspan(backcolor, forecolor) {
+          document.write("<span id='cntdwn' style='background-color:" + backcolor +
+            "; color:" + forecolor + "'></span>");
+        }
+        if (typeof (BackColor) == "undefined")
+          BackColor = "white"; if (typeof (ForeColor) == "undefined")
+          ForeColor = "black"; if (typeof (TargetDate) == "undefined")
+          TargetDate = "12/31/2020 5:00 AM"; if (typeof (DisplayFormat) == "undefined")
+          DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds."; if (typeof (CountActive) == "undefined")
+          CountActive = true; if (typeof (FinishMessage) == "undefined")
+          FinishMessage = ""; if (typeof (CountStepper) != "number")
+          CountStepper = -1; if (typeof (LeadingZero) == "undefined")
+          LeadingZero = true; CountStepper = Math.ceil(CountStepper); if (CountStepper == 0)
+          CountActive = false; var SetTimeOutPeriod = (Math.abs(CountStepper) - 1) * 1000 + 990; putspan(BackColor, ForeColor); var dthen = new Date(TargetDate); var dnow = new Date(); if (CountStepper > 0)
+          ddiff = new Date(dnow - dthen); else
+          ddiff = new Date(dthen - dnow); gsecs = Math.floor(ddiff.valueOf() / 1000); CountBack(gsecs);
+      </script>
+    </center>
+  </footer>
+</body>
 
 </html>

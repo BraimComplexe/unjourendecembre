@@ -1,23 +1,25 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <link rel="stylesheet" href="../css/base_mariage.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Un jour en Décembre</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="../css/base_mariage.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-  <body>
-    <header>
-        <h1>
-          <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
-          <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
-        </h1> 
-    </header>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Un jour en Décembre</title>
+</head>
 
-    <main>
+<body>
+  <header>
+    <h1>
+      <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
+      <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
+    </h1>
+  </header>
+
+  <main>
     <div class="tab">
       <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
       <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
@@ -26,12 +28,13 @@
       <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
     </div>
 
-    <div style='padding-top: 2%'>Afin de parfaire l'organisation de notre mariage, merci de remplir le formulaire suivant*: </div>
+    <div style='padding-top: 2%'>Afin de parfaire l'organisation de notre mariage, merci de remplir le formulaire
+      suivant*: </div>
 
     <div id="base_content">
       <form id="confirmationForm" action="/recuperation_donnees_confirmation" method="post">
         <center>
-        <label for="participant">Mon nom: </label>
+          <label for="participant">Mon nom: </label>
           <input list="participants" name="participant" id="participant">
           <datalist id="participants" style="display: none;">
             <option value="Alice Beaugrand">
@@ -41,28 +44,36 @@
             <option value="Anna Unknown">
             <option value="etc.">
           </datalist>
-        <br><label for="ceremonie">Je participe à la <b>réception du samedi</b> </label> <input id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Oui </input> 
-                                            <input id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Non </input> 
-        <br><label for="brunch">Je participe au <b>brunch du dimanche</b>: </label><input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Oui </input> 
-                                                      <input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Non </input> 
-        <br><label for="regime"><b>Régime alimentaire</b> particulier (végétarien, allergies, etc.): </label><input id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)" value="Oui">Oui</input>
-                                                                              <input id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)" value="Non">Non</input><br>
-              <label for="regimeInfosLabel" id="regimeInfosLabel" style="display: none">Dites nous en plus sur votre régime alimentaire particulier:</label>
-              <textarea id="regimeInfos" name="regimeInfos" form="confirmationForm" rows="5" cols="33" style="display: none"></textarea>
-        <br>
-        <center><button class="confirmation_button" type="submit">
-          <div class="img_envoyer_confirmation">
-            <img src="../css/img/R_marque_place.png" alt="image" height='100%'>
-            <div class="txt_envoyer_confirmation">Envoyer ma réponse</div>
-          </div>
-        </button> </center>
+          <br><label for="ceremonie">Je participe à la <b>réception du samedi</b> </label> <input
+            id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Oui </input>
+          <input id="checkbox_ceremonie" name="checkbox_ceremonie" type="radio"> Non </input>
+          <br><label for="brunch">Je participe au <b>brunch du dimanche</b>: </label><input id="checkbox_brunch"
+            name="checkbox_brunch" type="radio"> Oui </input>
+          <input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Non </input>
+          <br><label for="regime"><b>Régime alimentaire</b> particulier (végétarien, allergies, etc.): </label><input
+            id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)"
+            value="Oui">Oui</input>
+          <input id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)"
+            value="Non">Non</input><br>
+          <label for="regimeInfosLabel" id="regimeInfosLabel" style="display: none">Dites nous en plus sur votre régime
+            alimentaire particulier:</label>
+          <textarea id="regimeInfos" name="regimeInfos" form="confirmationForm" rows="5" cols="33"
+            style="display: none"></textarea>
+          <br>
+          <center><button class="confirmation_button" type="submit">
+              <div class="img_envoyer_confirmation">
+                <img src="../css/img/R_marque_place.png" alt="image" height='100%'>
+                <div class="txt_envoyer_confirmation">Envoyer ma réponse</div>
+              </div>
+            </button> </center>
         </center>
       </form>
     </div>
-    <div style = 'padding-top: 2%; text-align: right;'>
-      <u>*Merci de remplir un formulaire par personne</u></div> <br>
+    <div style='padding-top: 2%; text-align: right;'>
+      <u>*Merci de remplir un formulaire par personne</u>
+    </div> <br>
     <center>
-      <i class='fas fa-baby'></i><i class='fas fa-baby'></i><br> 
+      <i class='fas fa-baby'></i><i class='fas fa-baby'></i><br>
       Aucune disposition n'est prise concernant les enfants (ni menu enfant, ni nounou etc.).
       <br>Pour plus de renseignements, merci de nous contacter.
       <br>
@@ -74,47 +85,72 @@
 
 
 
-<!--FOOTER-->
-<footer>
-  <center><img src="../css/img/R_branche_coton.png" height="80px;"/><br></center>
-  <!-- COMPTE A REBOURS -->
-  <center>
-  
-  
-  
+  <!--FOOTER-->
+  <footer>
+    <center><img src="../css/img/R_branche_coton.png" height="80px;" /><br></center>
+    <!-- COMPTE A REBOURS -->
+    <center>
+
+
+
+      <script language="JavaScript">
+        TargetDate = "12/10/2022 03:30 PM";
+        BackColor = false;
+        ForeColor = false;
+        CountActive = true;
+        CountStepper = -1;
+        LeadingZero = true;
+
+        DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
+        FinishMessage = "C'est le jour J !";
+      </script>
+
+      <script language="JavaScript">
+        function calcage(secs, num1, num2) {
+          s = ((Math.floor(secs / num1)) % num2).toString(); if (LeadingZero && s.length < 2)
+            s = "0" + s; return "<b>" + s + "</b>";
+        }
+        function CountBack(secs) {
+          if (secs < 0) { document.getElementById("cntdwn").innerHTML = FinishMessage; return; }
+          DisplayStr = DisplayFormat.replace(/%%D%%/g, calcage(secs, 86400, 100000)); DisplayStr = DisplayStr.replace(/%%H%%/g, calcage(secs, 3600, 24)); DisplayStr = DisplayStr.replace(/%%M%%/g, calcage(secs, 60, 60)); DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs, 1, 60)); document.getElementById("cntdwn").innerHTML = DisplayStr; if (CountActive)
+            setTimeout("CountBack(" + (secs + CountStepper) + ")", SetTimeOutPeriod);
+        }
+        function putspan(backcolor, forecolor) {
+          document.write("<span id='cntdwn' style='background-color:" + backcolor +
+            "; color:" + forecolor + "'></span>");
+        }
+        if (typeof (BackColor) == "undefined")
+          BackColor = "white"; if (typeof (ForeColor) == "undefined")
+          ForeColor = "black"; if (typeof (TargetDate) == "undefined")
+          TargetDate = "12/31/2020 5:00 AM"; if (typeof (DisplayFormat) == "undefined")
+          DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds."; if (typeof (CountActive) == "undefined")
+          CountActive = true; if (typeof (FinishMessage) == "undefined")
+          FinishMessage = ""; if (typeof (CountStepper) != "number")
+          CountStepper = -1; if (typeof (LeadingZero) == "undefined")
+          LeadingZero = true; CountStepper = Math.ceil(CountStepper); if (CountStepper == 0)
+          CountActive = false; var SetTimeOutPeriod = (Math.abs(CountStepper) - 1) * 1000 + 990; putspan(BackColor, ForeColor); var dthen = new Date(TargetDate); var dnow = new Date(); if (CountStepper > 0)
+          ddiff = new Date(dnow - dthen); else
+          ddiff = new Date(dthen - dnow); gsecs = Math.floor(ddiff.valueOf() / 1000); CountBack(gsecs);
+      </script>
+
+
+    </center>
+  </footer>
+
   <script language="JavaScript">
-    TargetDate = "12/10/2022 03:30 PM";
-    BackColor = false;
-    ForeColor = false;
-    CountActive = true;
-    CountStepper = -1;
-    LeadingZero = true;
-
-    DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
-    FinishMessage = "C'est le jour J !";
-  </script>
-
-  <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-  </script>
-
-
-  </center>
-</footer>
-
-<script language="JavaScript">
-  function showRegimeDetails(src){
-    var regimeInfos = document.getElementById("regimeInfos");
-    var regimeInfosLabel = document.getElementById("regimeInfosLabel");
-    if (src.value == 'Oui'){
-      regimeInfos.style.display = 'block';
-      regimeInfosLabel.style.display = 'block';
-    } else{
-      regimeInfos.style.display = 'None';
-      regimeInfosLabel.style.display = 'None';
+    function showRegimeDetails(src) {
+      var regimeInfos = document.getElementById("regimeInfos");
+      var regimeInfosLabel = document.getElementById("regimeInfosLabel");
+      if (src.value == 'Oui') {
+        regimeInfos.style.display = 'block';
+        regimeInfosLabel.style.display = 'block';
+      } else {
+        regimeInfos.style.display = 'None';
+        regimeInfosLabel.style.display = 'None';
+      }
     }
-  }
 
-</script>
+  </script>
 </body>
 
 </html>

@@ -1,21 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-  <head>
-    <link rel="stylesheet" href="../css/base_mariage.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Un jour en Décembre</title>
-  </head>
+<head>
+  <link rel="stylesheet" href="../css/base_mariage.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="../css/img/Logo M_J.png">
 
-  <body>
-    <header>
-        <h1>
-          <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
-          <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
-        </h1> 
-    </header>
-    <main>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Un jour en Décembre</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img class="title_logo" src="../css/img/Logo M_J.png" alt="M&J: un jour en Décembre"></img>
+      <div class="title_header"><a id='a_title_header' href='../base.html'>Un jour en Décembre</a></div>
+    </h1>
+  </header>
+  <main>
     <div class="tab">
       <button class="tablinks"><a id='a_tablinks' href='./informations.html'>Informations</a></button>
       <button class="tablinks"><a id='a_tablinks' href='./confirmation.html'>Confirmation Présence</a></button>
@@ -24,159 +25,177 @@
       <button class="tablinks"><a id='a_tablinks' href='./teams.html'>Team des Mariés</a></button>
     </div>
 
-    
-    
+
+
     <div id="base_content">
       <center>
-        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/>
-        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/><br>
-      
-      Nous vous laissons le soin de réserver votre chambre dans le lieu de votre choix. Pour vous aider, vous trouverez ici une liste d'hôtels se trouvant à proximité du lieu de réception. 
-      <br><br>
-      Si vous choisissez un logement parmi la liste ci-dessous, un service de navette peut être mis en place pour vous emmener à votre hôtel, le samedi soir après la fête, depuis le lieu de réception et vous ramener le lendemain, pour le brunch depuis votre hôtel. Merci de nous indiquer si vous êtes intéressés.
-      <form action="/recuperation_donnees_navette" id="navetteForm" method="post" style="width: 40%; margin-top: 50px; border-top: solid 1px #0a4b39; border-bottom: solid 1px #0a4b39;">
-        <center>
-        <label for="participant_navette">Mon nom: </label>
-          <input list="participants_navette" name="participant_navette" id="participant_navette">
-          <datalist id="participants_navette" style="display: none;">
-            <option value="Alice Beaugrand">
-            <option value="Jean-Noël Lorenzi">
-            <option value="Jean-Paul Unknown">
-            <option value="Pauline Unknown">
-            <option value="Anna Unknown">
-          </datalist>
-        <br><label for="navette">Je suis intéressé(e) par le service de navette:</label> <input id="checkbox_navette" name="checkbox_navette" type="radio" value="Oui" onClick="showHotelDetails(this)"> Oui
-                                            <input id="checkbox_navette" name="checkbox_navette" type="radio" value="Non" onClick="showHotelDetails(this)"> Non
-          <label for="hotelInfosLabel" id="hotelInfosLabel" style="display: none">Dans quel hôtel allez-vous réserver votre chambre ?</label>
-          <textarea id="hotelInfos" name="hotelInfos" form="navetteForm" rows="5" cols="33" style="display: none"></textarea>
-                                    
-        <br>
-        <button class="navette_button" type="submit">
-          <div class="txt_envoyer_navette">Envoyer</div>
-        </button>
-        </center>
-      </form><br>
-      
-        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/>
-        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;"/><br>
-    </center>
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;" />
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;" /><br>
+
+        Nous vous laissons le soin de réserver votre chambre dans le lieu de votre choix. Pour vous aider, vous
+        trouverez ici une liste d'hôtels se trouvant à proximité du lieu de réception.
+        <br><br>
+        Si vous choisissez un logement parmi la liste ci-dessous, un service de navette peut être mis en place pour vous
+        emmener à votre hôtel, le samedi soir après la fête, depuis le lieu de réception et vous ramener le lendemain,
+        pour le brunch depuis votre hôtel. Merci de nous indiquer si vous êtes intéressés.
+        <form action="/recuperation_donnees_navette" id="navetteForm" method="post"
+          style="width: 40%; margin-top: 50px; border-top: solid 1px #0a4b39; border-bottom: solid 1px #0a4b39;">
+          <center>
+            <label for="participant_navette">Mon nom: </label>
+            <input list="participants_navette" name="participant_navette" id="participant_navette">
+            <datalist id="participants_navette" style="display: none;">
+              <option value="Alice Beaugrand">
+              <option value="Jean-Noël Lorenzi">
+              <option value="Jean-Paul Unknown">
+              <option value="Pauline Unknown">
+              <option value="Anna Unknown">
+            </datalist>
+            <br><label for="navette">Je suis intéressé(e) par le service de navette:</label> <input
+              id="checkbox_navette" name="checkbox_navette" type="radio" value="Oui" onClick="showHotelDetails(this)">
+            Oui
+            <input id="checkbox_navette" name="checkbox_navette" type="radio" value="Non"
+              onClick="showHotelDetails(this)"> Non
+            <label for="hotelInfosLabel" id="hotelInfosLabel" style="display: none">Dans quel hôtel allez-vous réserver
+              votre chambre ?</label>
+            <textarea id="hotelInfos" name="hotelInfos" form="navetteForm" rows="5" cols="33"
+              style="display: none"></textarea>
+
+            <br>
+            <button class="navette_button" type="submit">
+              <div class="txt_envoyer_navette">Envoyer</div>
+            </button>
+          </center>
+        </form><br>
+
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;" />
+        <img src="../css/img/R_lanterne.png" style="height:60px; padding-left: 20px;" /><br>
+      </center>
     </div><br><br>
 
-  
+
     <div id="hotelPreferentiel">
-    <b>OLIVARIUS (Appart’Hotel) </b><br>
-    34, boulevard du Port - Cergy-Pontoise <br>
-    01 34 25 15 75 <br>
-    <a href="https://olivarius-cergy.com/">https://olivarius-cergy.com/</a> <br>
-    <i>*des tarifs préférentiels sont appliqués pour cet hôtel en raison de son partenariat avec le lieu de réception.<br>
-      Pour plus d'informations sur les tarifs préférentiels, cliquez <a href="../css/img/tarifsPreferentiels.pdf" target="_blank">ICI</a></i><br><br>
+      <b>OLIVARIUS (Appart’Hotel) </b><br>
+      34, boulevard du Port - Cergy-Pontoise <br>
+      01 34 25 15 75 <br>
+      <a href="https://olivarius-cergy.com/">https://olivarius-cergy.com/</a> <br>
+      <i>*des tarifs préférentiels sont appliqués pour cet hôtel en raison de son partenariat avec le lieu de
+        réception.<br>
+        Pour plus d'informations sur les tarifs préférentiels, cliquez <a href="../css/img/tarifsPreferentiels.pdf"
+          target="_blank">ICI</a></i><br><br>
     </div>
-    
-    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
     </center><br>
 
     <div id="block_hotel">
-    <b>IBIS </b><br>
-    28, avenue des Grouettes - Cergy-Pontoise<br>
-    <a href="https://all.accor.com/hotel/0928/index.fr.shtml">https://all.accor.com/hotel/0928/index.fr.shtml</a> <br>
-    01 34 22 11 44<br><br>
+      <b>IBIS </b><br>
+      28, avenue des Grouettes - Cergy-Pontoise<br>
+      <a href="https://all.accor.com/hotel/0928/index.fr.shtml">https://all.accor.com/hotel/0928/index.fr.shtml</a> <br>
+      01 34 22 11 44<br><br>
     </div>
 
-    
+
 
     <div id="block_hotel">
-    <b>NOVOTEL </b><br>
-    3, avenue du Parc - Cergy-Pontoise<br>
-    <a href="https://novotel-cergy-pontoise.hotelmix.fr/">https://novotel-cergy-pontoise.hotelmix.fr/</a> <br>
-    01 30 30 39 47<br><br>
+      <b>NOVOTEL </b><br>
+      3, avenue du Parc - Cergy-Pontoise<br>
+      <a href="https://novotel-cergy-pontoise.hotelmix.fr/">https://novotel-cergy-pontoise.hotelmix.fr/</a> <br>
+      01 30 30 39 47<br><br>
     </div>
 
-    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
     </center><br>
 
     <div id="block_hotel">
       <b>KYRIAD</b><br>
-    45, avenue Genottes - Cergy St Christophe<br>
-    <a href="https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/">https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/</a> <br>
-    01 30 30 19 11<br><br>
+      45, avenue Genottes - Cergy St Christophe<br>
+      <a
+        href="https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/">https://www.kyriad.com/fr-fr/nos-hotels/france/ile-de-france/hotels-cergy-saint-christophe/</a>
+      <br>
+      01 30 30 19 11<br><br>
     </div>
 
     <div id="block_hotel">
       <b>PREMIERE CLASSE</b><br>
-    Rue de la Pompe - Cergy<br>
-    <a href="https://cergy-saint-christophe.premiereclasse.com/fr-fr/">https://cergy-saint-christophe.premiereclasse.com/fr-fr/</a> <br>
-    01 30 38 07 79<br><br>
+      Rue de la Pompe - Cergy<br>
+      <a
+        href="https://cergy-saint-christophe.premiereclasse.com/fr-fr/">https://cergy-saint-christophe.premiereclasse.com/fr-fr/</a>
+      <br>
+      01 30 38 07 79<br><br>
     </div>
-    
-    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
     </center><br>
-    
+
     <div id="block_hotel">
       <b>PALM’HOTEL</b><br>
-    Rue de la Parabole - Cergy<br>
-    <a href="https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html</a><br>
-    01 30 30 80 77<br><br>
+      Rue de la Parabole - Cergy<br>
+      <a
+        href="https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g262037-d498241-Reviews-Palm_Hotel-Cergy_Cergy_Pontoise_Val_d_Oise_Ile_de_France.html</a><br>
+      01 30 30 80 77<br><br>
     </div>
 
     <div id="block_hotel">
       <b>FORMULE 1</b><br>
-    RN 14 - Cergy St Christophe<br>
-    <a href="https://all.accor.com/hotel/B3B4/index.fr.shtml">https://all.accor.com/hotel/B3B4/index.fr.shtml</a><br>
-    08 91 70 52 09<br><br>
+      RN 14 - Cergy St Christophe<br>
+      <a href="https://all.accor.com/hotel/B3B4/index.fr.shtml">https://all.accor.com/hotel/B3B4/index.fr.shtml</a><br>
+      08 91 70 52 09<br><br>
     </div>
 
-    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
     </center><br>
 
     <div id="block_hotel">
       <b>IBIS BUDGET</b> <br>
-    Allée du Promenoir - Cergy St Christophe<br>
-    <a href="https://all.accor.com/hotel/4981/index.fr.shtml">https://all.accor.com/hotel/4981/index.fr.shtml</a> <br>
-    08 92 68 09 20<br><br>
+      Allée du Promenoir - Cergy St Christophe<br>
+      <a href="https://all.accor.com/hotel/4981/index.fr.shtml">https://all.accor.com/hotel/4981/index.fr.shtml</a> <br>
+      08 92 68 09 20<br><br>
     </div>
 
     <div id="block_hotel">
       <b>CAMPANILE</b><br>
-    Rue du Petit Albi - Cergy<br>
-    <a href="https://cergy-pontoise.campanile.com/fr-fr/">https://cergy-pontoise.campanile.com/fr-fr/</a> <br>
-    01 34 24 02 44<br><br>
+      Rue du Petit Albi - Cergy<br>
+      <a href="https://cergy-pontoise.campanile.com/fr-fr/">https://cergy-pontoise.campanile.com/fr-fr/</a> <br>
+      01 34 24 02 44<br><br>
     </div>
 
-    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
-      <img src="../css/img/R_branche_sapin.png" style="height:30px;"/>
+    <center><img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
+      <img src="../css/img/R_branche_sapin.png" style="height:30px;" />
     </center><br>
 
     <div id="block_hotel">
       <b>MERCURE</b> <br>
-    3, rue des Chenes - Cergy<br>
-    <a href="https://mercure.accor.com/fr/france/index.shtml">https://mercure.accor.com/fr/france/index.shtml</a> <br>
-    01 34 24 94 94<br><br>
+      3, rue des Chenes - Cergy<br>
+      <a href="https://mercure.accor.com/fr/france/index.shtml">https://mercure.accor.com/fr/france/index.shtml</a> <br>
+      01 34 24 94 94<br><br>
     </div>
 
     <div id="block_hotel">
       <b>COMFORT HOTEL</b><br>
-    Rue des Pleïades - Les Mureaux <br>
-    <a href="https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html</a> <br>
-    01 34 74 72 50<br><br>
+      Rue des Pleïades - Les Mureaux <br>
+      <a
+        href="https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html">https://www.tripadvisor.fr/Hotel_Review-g226953-d226974-Reviews-Comfort_Hotel_Les_Mureaux-Les_Mureaux_Yvelines_Ile_de_France.html</a>
+      <br>
+      01 34 74 72 50<br><br>
     </div>
 
   </main>
@@ -186,43 +205,68 @@
 
 
 
-<!--FOOTER-->
-<footer>
-  <center><img src="../css/img/R_branche_coton.png" height="80px;"/><br></center>
-  <!-- COMPTE A REBOURS -->
-  <center>
+  <!--FOOTER-->
+  <footer>
+    <center><img src="../css/img/R_branche_coton.png" height="80px;" /><br></center>
+    <!-- COMPTE A REBOURS -->
+    <center>
+      <script language="JavaScript">
+        TargetDate = "12/10/2022 03:30 PM";
+        BackColor = false;
+        ForeColor = false;
+        CountActive = true;
+        CountStepper = -1;
+        LeadingZero = true;
+
+        DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
+        FinishMessage = "C'est le jour J !";
+      </script>
+      <script language="JavaScript">
+        function calcage(secs, num1, num2) {
+          s = ((Math.floor(secs / num1)) % num2).toString(); if (LeadingZero && s.length < 2)
+            s = "0" + s; return "<b>" + s + "</b>";
+        }
+        function CountBack(secs) {
+          if (secs < 0) { document.getElementById("cntdwn").innerHTML = FinishMessage; return; }
+          DisplayStr = DisplayFormat.replace(/%%D%%/g, calcage(secs, 86400, 100000)); DisplayStr = DisplayStr.replace(/%%H%%/g, calcage(secs, 3600, 24)); DisplayStr = DisplayStr.replace(/%%M%%/g, calcage(secs, 60, 60)); DisplayStr = DisplayStr.replace(/%%S%%/g, calcage(secs, 1, 60)); document.getElementById("cntdwn").innerHTML = DisplayStr; if (CountActive)
+            setTimeout("CountBack(" + (secs + CountStepper) + ")", SetTimeOutPeriod);
+        }
+        function putspan(backcolor, forecolor) {
+          document.write("<span id='cntdwn' style='background-color:" + backcolor +
+            "; color:" + forecolor + "'></span>");
+        }
+        if (typeof (BackColor) == "undefined")
+          BackColor = "white"; if (typeof (ForeColor) == "undefined")
+          ForeColor = "black"; if (typeof (TargetDate) == "undefined")
+          TargetDate = "12/31/2020 5:00 AM"; if (typeof (DisplayFormat) == "undefined")
+          DisplayFormat = "%%D%% Days, %%H%% Hours, %%M%% Minutes, %%S%% Seconds."; if (typeof (CountActive) == "undefined")
+          CountActive = true; if (typeof (FinishMessage) == "undefined")
+          FinishMessage = ""; if (typeof (CountStepper) != "number")
+          CountStepper = -1; if (typeof (LeadingZero) == "undefined")
+          LeadingZero = true; CountStepper = Math.ceil(CountStepper); if (CountStepper == 0)
+          CountActive = false; var SetTimeOutPeriod = (Math.abs(CountStepper) - 1) * 1000 + 990; putspan(BackColor, ForeColor); var dthen = new Date(TargetDate); var dnow = new Date(); if (CountStepper > 0)
+          ddiff = new Date(dnow - dthen); else
+          ddiff = new Date(dthen - dnow); gsecs = Math.floor(ddiff.valueOf() / 1000); CountBack(gsecs);
+      </script>
+    </center>
+
+  </footer>
+
   <script language="JavaScript">
-    TargetDate = "12/10/2022 03:30 PM";
-    BackColor = false;
-    ForeColor = false;
-    CountActive = true;
-    CountStepper = -1;
-    LeadingZero = true;
-
-    DisplayFormat = "Mariage dans: %%D%% jours &nbsp; %%H%% heures &nbsp; %%M%% minutes &nbsp; %%S%% secondes";
-    FinishMessage = "C'est le jour J !";
-  </script>
-  <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js">
-  </script>
-  </center>
-
-</footer>
-
-<script language="JavaScript">
-  function showHotelDetails(src){
-    var hotelInfos = document.getElementById("hotelInfos");
-    var hotelInfosLabel = document.getElementById("hotelInfosLabel");
-    if (src.value == 'Oui'){
-      hotelInfos.style.display = 'block';
-      hotelInfosLabel.style.display = 'block';
-    } else{
-      hotelInfos.style.display = 'None';
-      hotelInfosLabel.style.display = 'None';
+    function showHotelDetails(src) {
+      var hotelInfos = document.getElementById("hotelInfos");
+      var hotelInfosLabel = document.getElementById("hotelInfosLabel");
+      if (src.value == 'Oui') {
+        hotelInfos.style.display = 'block';
+        hotelInfosLabel.style.display = 'block';
+      } else {
+        hotelInfos.style.display = 'None';
+        hotelInfosLabel.style.display = 'None';
+      }
     }
-  }
 
-</script>
+  </script>
 
-  </body>
+</body>
 
 </html>
