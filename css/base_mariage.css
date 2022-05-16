@@ -187,7 +187,7 @@ header h1{
     display: none;
   }
 
-  #checkbox_ceremonie, #checkbox_vindhonneur, #checkbox_soiree, #checkbox_brunch{
+  #checkbox_ceremonie, #checkbox_brunch{
     accent-color: #0a4b39;
   }
 
