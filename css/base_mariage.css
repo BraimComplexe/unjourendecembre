@@ -3,13 +3,13 @@
     src: url("./polices/GreatVibes-Regular.ttf");
 }
 @font-face {    
-    font-family: 'Elegant';
-    src: url("./polices/Elegant.ttf");
+    font-family: 'BooksScript';
+    src: url("./polices/BooksScript.otf");
 }
 
 body {
     background-color: #fefff3;
-    font-family: 'Elegant';
+    font-family: 'BooksScript';
     font-size: 35px;
     height: 100%;
   }
@@ -157,8 +157,8 @@ header h1{
     background-color: inherit;
     font-family: inherit;
     font-size: inherit;
-    height: 20%;
-    width: 100%;
+    height: 180px;
+    width: 200px;
     cursor: pointer;
   }
 
@@ -167,13 +167,16 @@ header h1{
     position: relative;
     text-align: center;
     color: #0a4b39;
+    width: 100%;
+    height: 100%;
   }
   
   .txt_envoyer_confirmation {
     position: absolute;
     font-size: 32px;
+    width: 220px;
     top: 60%;
-    left: 49%;
+    left: 55%;
     transform: translate(-50%, -50%);
   }
 
