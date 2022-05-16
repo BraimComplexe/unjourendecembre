@@ -47,7 +47,8 @@
                                                       <input id="checkbox_brunch" name="checkbox_brunch" type="radio"> Non </input> 
         <br><label for="regime"><b>Régime alimentaire</b> particulier (végétarien, allergies, etc.): </label><input id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)" value="Oui">Oui</input>
                                                                               <input id="checkbox_regime" name="checkbox_regime" type="radio" onClick="showRegimeDetails(this)" value="Non">Non</input><br>
-              <label for="regimeInfosLabel" id="regimeInfosLabel" style="display: none">Dites nous en plus sur votre régime alimentaire particulier:</label><textarea id="regimeInfos" name="regimeInfos" form="confirmationForm" rows="5" cols="33" style="display: none"></textarea>
+              <label for="regimeInfosLabel" id="regimeInfosLabel" style="display: none">Dites nous en plus sur votre régime alimentaire particulier:</label>
+              <textarea id="regimeInfos" name="regimeInfos" form="confirmationForm" rows="5" cols="33" style="display: none"></textarea>
         <br>
         <center><button class="confirmation_button" type="submit">
           <div class="img_envoyer_confirmation">
@@ -100,20 +101,20 @@
   </center>
 </footer>
 
-  <script language="JavaScript">
-    function showRegimeDetails(src){
-      var regimeInfos = document.getElementById("regimeInfos");
-      var regimeInfosLabel = document.getElementById("regimeInfosLabel");
-      if (src.value == 'Oui'){
-        regimeInfos.style.display = 'block';
-        regimeInfosLabel.style.display = 'block';
-      } else{
-        regimeInfos.style.display = 'None';
-        regimeInfosLabel.style.display = 'None';
-      }
+<script language="JavaScript">
+  function showRegimeDetails(src){
+    var regimeInfos = document.getElementById("regimeInfos");
+    var regimeInfosLabel = document.getElementById("regimeInfosLabel");
+    if (src.value == 'Oui'){
+      regimeInfos.style.display = 'block';
+      regimeInfosLabel.style.display = 'block';
+    } else{
+      regimeInfos.style.display = 'None';
+      regimeInfosLabel.style.display = 'None';
     }
+  }
 
-  </script>
+</script>
 </body>
 
 </html>
