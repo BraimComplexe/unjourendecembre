@@ -26,4 +26,4 @@ class ConfirmationForm extends React.Component {
 
 const domContainer = document.querySelector('#base_content');
 const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+root.render(e(ConfirmationForm));
